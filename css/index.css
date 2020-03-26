@@ -1,37 +1,112 @@
+@font-face {
+  font-family: "RobotoCondened";
+  src: url("../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  src: url("../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.woff") format("woff"),
+  url("../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.otf") format("opentype"),
+  url("../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.svg#filename") format("svg");
+}
+
+@font-face {
+  font-family: "Sen";
+  src: url("../assets/fonts/Sen/Sen-Regular.ttfSen.eot");
+  src: url("../assets/fonts/Sen/Sen-Regular.ttfSen.woff") format("woff"),
+  url("../assets/fonts/Sen/Sen-Regular.ttfSen.otf") format("opentype"),
+  url("../assets/fonts/Sen/Sen-Regular.ttfSen.svg#filename") format("svg");
+}
+
 body {
   height: 100vh;
   width: 100vw;
+}
+
+h1, .btn-spin {
+  font-family: 'RobotoCondened', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3, .btn-answer {
+  font-family: 'Sen', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .container {
   display: flex;
   height: 100%;
   flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-max {
+  background: url('../assets/board.png');
+  height: 100%;
+  width: 100%;
 }
 
 .container-left {
   flex: 2;
   flex-direction: column;
+  height: 100vh
 }
 
 .container-rulete {
-  background: blue;
-  align-items: center;
   flex: 8;
-  justify-content: center;
-}
-
-.title {
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
 }
 
 .button-container {
-  align-items: center;
   justify-content: space-around;
+}
+
+.title h1{
+  -webkit-transform: rotate(-29deg);
+  -moz-transform: rotate(-29deg);
+  -ms-transform: rotate(-29deg);
+  -o-transform: rotate(-29deg);
+  transform: rotate(-29deg);
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  color:#e5e5e5;
+  font-size: 47pt;
+  font-style: italic;
+  transform-origin: 53% 50%;
 }
 
 .btn-spin {
   height: 150px;
+  font-size: 18pt;
   width: 150px;
+}
+
+.card {
+  height: 50%;
+  background: #e5e5e5;
+}
+
+#rulete {
+  flex: 7;
+}
+
+#answers {
+  flex: 3
+}
+
+#wallpaper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.btn-answer {
+  flex: 3;
+  margin: 10px;
 }
