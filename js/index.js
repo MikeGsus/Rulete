@@ -1,0 +1,4 @@
+function letSpin () {
+  alert(`Spin`)
+}
+
