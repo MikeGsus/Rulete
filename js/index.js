@@ -334,11 +334,7 @@ function letSpin () {
     })
 
     if (i === selected) {
-      console.log('i >>>>', i)
-      console.log('selected >>>>', selected)
       round.push(selected)
-      console.log('round >>>>', round)
-      console.log('questions >>>>', questions)
       clearInterval(interval)
       card.style.display = 'flex'
     }
@@ -353,11 +349,6 @@ function letSpin () {
 function choiseAnswer (id) {
   const current = round[round.length - 1]
   const { correct } = questions[current]
-  console.log('round >>>>', round)
-  console.log('id >>>>', id)
-  console.log('correct >>>>', correct)
-  console.log('current >>>>', current)
-  console.log('questions[current] >>>>', questions[current])
   if (id === correct) {
     correctPlayer.play()
     swal.fire('Correcto', '', 'success')
