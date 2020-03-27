@@ -305,6 +305,11 @@ function letSpin () {
     return
   }
 
+  const audio = document.getElementById('ruletePlayer')
+  const correctPlayer = document.getElementById('correctPlayer')
+  const failPlayer = document.getElementById('failPlayer')
+  audio.play()
+
   const questionTag = document.getElementById('question')
   const buttonContainer = document.getElementById('answers')
   const card = document.getElementsByClassName('card')[0]
@@ -349,8 +354,10 @@ function choiseAnswer (id) {
   const current = round.length - 1
   const { correct } = questions[current]
   if (id === correct) {
+    correctPlayer.play()
     swal.fire('Correcto', '', 'success')
   } else {
+    failPlayer.play()
     swal.fire('Incorrecto', '', 'error')
   }
 }
