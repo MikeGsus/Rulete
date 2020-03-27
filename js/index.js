@@ -1,5 +1,3 @@
-// const Swal = requirejs('sweetalert2')
-
 const questions = [
   {
     question: 'Son aquellos medios y recursos que facilitan el proceso de enseñanza – aprendizaje:',
@@ -335,24 +333,31 @@ function letSpin () {
       createButtons(item, j)
     })
 
-    console.log('i', i)
-    console.log('i < max', i < max)
+    if (i === selected) {
+      console.log('i >>>>', i)
+      console.log('selected >>>>', selected)
+      round.push(selected)
+      console.log('round >>>>', round)
+      console.log('questions >>>>', questions)
+      clearInterval(interval)
+      card.style.display = 'flex'
+    }
     if (i < max - 1) {
       i++
     } else {
       i = 0
     }
-    if (i === selected) {
-      round.push(selected)
-      clearInterval(interval)
-      card.style.display = 'flex'
-    }
   }, 125)
 }
 
 function choiseAnswer (id) {
-  const current = round.length - 1
+  const current = round[round.length - 1]
   const { correct } = questions[current]
+  console.log('round >>>>', round)
+  console.log('id >>>>', id)
+  console.log('correct >>>>', correct)
+  console.log('current >>>>', current)
+  console.log('questions[current] >>>>', questions[current])
   if (id === correct) {
     correctPlayer.play()
     swal.fire('Correcto', '', 'success')
