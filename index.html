@@ -19,13 +19,14 @@
 
 </head>
 <body>
-  <img src="./assets/board.png" alt="background" id="wallpaper">
+  <img src="./assets/img/png/background.png" alt="background" id="wallpaper">
   <div class="container container-fluid">
     <div class="container container-left">
       <div class="container title">
         <h1>
           Ruleta
         </h1>
+        <h3>MEDIOS Y RECURSOS DIDÁCTICOS</h3>
       </div>
       <div class="container button-container">
         <button
@@ -33,16 +34,20 @@
           onclick="letSpin()"
         >
           Girar
-        </buttonclass="btn>
+        </button>
       </div>
+      <div class="empty"></div>
     </div>
     <div class="container container-rulete">
       <div class="container" id="rulete">
+        <img src="./assets/img/jpg/ruleta.jpeg" alt="ruleta" id="circle-rulete">
         <div class="container card">
           <h3 id="question">Presiona "Girar" para comenzar</h3>
         </div>
       </div>
-      <div class="container button-container" id="answers"></div>
+      <div class="container button-container" id="answers">
+        <img src="./assets/img/gif/flecha.gif" alt="flecha" id="arrow">
+      </div>
     </div>
   </div>
 </body>

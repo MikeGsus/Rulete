@@ -265,9 +265,15 @@ const questions = [
 ]
 
 const round = []
+let rand = 0
 
 const getPosition = (max) => {
-  return Math.floor(Math.random() * (max))
+  const selected = Math.floor(Math.random() * (max))
+  if (round.indexOf(selected) < 0) {
+    return selected
+  } else {
+    getPosition(max)
+  }
 }
 
 const createButtons = (text, id) => {
@@ -284,16 +290,34 @@ const createButtons = (text, id) => {
   buttonContainer.appendChild(button)
 }
 
+function rotate (num) {
+  const rulete = document.getElementById('circle-rulete')
+  rand += 360
+  rulete.style.transform = `rotate(${rand}deg)`
+}
+
 function letSpin () {
   const max = questions.length
   const selected = getPosition(max)
 
+  if (round.length === max) {
+    swal.fire('No hay mas preguntas', '', 'info')
+    return
+  }
+
   const questionTag = document.getElementById('question')
   const buttonContainer = document.getElementById('answers')
-
+  const card = document.getElementsByClassName('card')[0]
+  
+  card.style.display = 'none'
   let i = 0
-
-  if (round.length > 0) i = round[round.length - 1]
+  rotate()
+  if (round.length > 0) {
+    i = round[round.length - 1]
+  } else {
+    const arrow = document.getElementById('arrow')
+    buttonContainer.removeChild(arrow)
+  }
   const interval = setInterval(() => {
     const {
       question,
@@ -306,7 +330,9 @@ function letSpin () {
       createButtons(item, j)
     })
 
-    if (i < max) {
+    console.log('i', i)
+    console.log('i < max', i < max)
+    if (i < max - 1) {
       i++
     } else {
       i = 0
@@ -314,6 +340,7 @@ function letSpin () {
     if (i === selected) {
       round.push(selected)
       clearInterval(interval)
+      card.style.display = 'flex'
     }
   }, 125)
 }

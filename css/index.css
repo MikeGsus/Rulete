@@ -19,7 +19,7 @@ body {
   width: 100vw;
 }
 
-h1, .btn-spin {
+.title h1, .title h3, .btn-spin {
   font-family: 'RobotoCondened', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -58,35 +58,40 @@ h3, .btn-answer {
   justify-content: space-evenly;
 }
 
+.container-rulete img {
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
 .button-container {
   justify-content: space-around;
 }
 
+.title {
+  flex-direction: column;
+}
+
 .title h1{
-  -webkit-transform: rotate(-29deg);
-  -moz-transform: rotate(-29deg);
-  -ms-transform: rotate(-29deg);
-  -o-transform: rotate(-29deg);
-  transform: rotate(-29deg);
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  color:#e5e5e5;
   font-size: 47pt;
-  font-style: italic;
-  transform-origin: 53% 50%;
+}
+
+.title h3{
+  
 }
 
 .btn-spin {
   height: 150px;
   font-size: 18pt;
   width: 150px;
+  margin-bottom: 10%;
 }
 
 .card {
-  height: 50%;
-  background: #e5e5e5;
+  height: 30%;
+  width: 50%;
 }
 
 #rulete {
@@ -94,7 +99,9 @@ h3, .btn-answer {
 }
 
 #answers {
-  flex: 3
+  flex: 3;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #wallpaper {
@@ -109,4 +116,22 @@ h3, .btn-answer {
 .btn-answer {
   flex: 3;
   margin: 10px;
+}
+
+#arrow {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  height: 150px;
+}
+
+.container-left .button-container {
+  align-items: center;
+  padding-top: 60%;
+}
+
+#circle-rulete {
+  transition: all 3s;
 }
