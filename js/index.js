@@ -1,262 +1,136 @@
 const questions = [
   {
-    question: 'Son aquellos medios y recursos que facilitan el proceso de enseñanza – aprendizaje:',
+    question: '¿Por quién podemos tener un encuentro con Dios y seguie en comunión con él',
     answer: [
-      'a) Alumno',
-      'b) Docente',
-      'c) Materiales didácticos'
+      'a) Sacerdote',
+      'b) La persona que me invitó',
+      'c) Espíritu Santo'
     ],
     correct: 2
   },
   {
-    question: 'De que manera, Brunes y Olson señalan que se puede adquirir información:',
+    question: '¿Qué es la gracia?',
     answer: [
-      'a) Directa e indirecta',
-      'b) A través del trabajo colaborativo',
-      'c) Recursos'
+      'a) No vivir en pecado mortal',
+      'b) No vivir en pecado venial',
+      'c) No vivir en pecado'
     ],
     correct: 0
   },
   {
-    question: '¿Qué autor nos dice que es un recurso de instrucción que proporciona al alumno una experiencia indirecta a la realidad?',
+    question: '¿Qué es la vivir en la presencia de Dios?',
     answer: [
-      'a) Meredith',
-      'b) Margarita Castañeda',
-      'c) Allen'
+      'a) Morir e ir al Cielo',
+      'b) Saber que Dios me ve',
+      'c) Vivir dentro del templo'
     ],
     correct: 1
   },
   {
-    question: 'Es una disciplina científica perteneciente al campo de la de la Dirección en la Educación',
+    question: '¿Cómo nos ha pensado Dios?',
     answer: [
-      'a) Organización Escolar',
-      'b) Institución Educativa',
-      'c) Aprendizaje'
+      'a) Templos vivos del Espíritu',
+      'b) Santos',
+      'c) Pecadores'
     ],
     correct: 0
   },
   {
-    question: 'La Organización Escolar Comprende, las realidades de una Educación',
+    question: 'Según el salmista, ¿Qué buscan nuestros corazones?',
     answer: [
-      'a) Global',
-      'b) Básica y media superior',
-      'c) Formar y no formal'
+      'a) Su presencia',
+      'b) Su corazón',
+      'c) Su rostro'
     ],
     correct: 2
   },
   {
-    question: 'La Organización Escolar aborda realidades:',
+    question: 'Vivir en Gracia también es...',
     answer: [
-      'a) Geográficas',
-      'b) Socios – Culturales',
-      'c) Religiosos'
+      'a) Ser santos',
+      'b) Vivir en amistad con Dios',
+      'c) Brillar cómo Moises'
     ],
     correct: 1
   },
   {
-    question: 'Los Materiales didácticos tienen una función de intermediario o mediador entre:',
+    question: 'Vivir en Gracia hace a Dios nuestra...',
     answer: [
-      'a)  Maestros – alumnos',
-      'b) Enseñanza – Director',
-      'c) Escuela – Alumnos'
+      'a) Coraza contra la tentación y el pecado',
+      'b) Amigo fiel',
+      'c) Salvación'
     ],
     correct: 0
   },
   {
-    question: '¿Qué es diseñar?',
+    question: 'Al vivir en Gracia, nosotros...',
     answer: [
-      'a) Armar, constituir y elevar.',
-      'b) Crear, construir o edificar algo',
-      'c) Edificar, cubrir una necesidad o hacer.'
+      'a) Nos alejamos de todo y todos',
+      'b) Vivimos de un modo diferente, sin alejarnos de todo',
+      'c) Hacemos milagros'
     ],
     correct: 1
   },
   {
-    question: '¿Qué se debe precisar para que el material didáctico sea eficiente?',
+    question: '¿A través de cuantos medios nos habla Dios?',
     answer: [
-      'a) El papel del docente',
-      'b) El objetivo.',
-      'c) El estudio'
+      'a) 3',
+      'b) 5',
+      'c) 1'
     ],
     correct: 1
   },
   {
-    question: '¿Qué autor recomienda que los materiales sean cuidadosamente diseñados, atractivos, sencillos y del tamaño del niño?',
+    question: '¿Cuál es el medio privilegiado para escuchar a Dios?',
     answer: [
-      'a) Juan Amos Comenio',
-      'b) Jean Piaget',
-      'c) María Montessori'
+      'a) A través de los demás',
+      'b) Palabra de conocimiento',
+      'c) Escrituras'
     ],
     correct: 2
   },
   {
-    question: '¿Qué debe resultar evidente, con el diseño de los materiales didácticos?',
+    question: 'Ha pasado de boca en boca y no siempre ha habido registro de ello',
     answer: [
-      'a) Los errores al igual que los éxitos del alumno',
-      'b) Los éxitos del profesor',
-      'c) Los avances y retrocesos de ambos'
+      'a) Tradición apostólica ',
+      'b) Mitos y leyendas',
+      'c) La biblia'
     ],
     correct: 0
   },
   {
-    question: '¿Cuál es el principio de la intuición?',
+    question: 'Se encarga de interpretar y preservar el deposito de la fe',
     answer: [
-      'a) La comunicación',
-      'b) Aproximar a la realidad',
-      'c) Acercar las ideas a los sentidos'
+      'a) El papa',
+      'b) Los sacerdotes',
+      'c) Magisterio de la Iglesia'
     ],
     correct: 2
   },
   {
-    question: '¿Para qué es necesario el material didáctico?',
+    question: 'Es el deposito de la fe',
     answer: [
-      'a) Para tener una mejor oportunidad de aprendizaje',
-      'b) Para activar los sentidos',
-      'c) Para adquirir destrezas motoras.'
+      'a) Biblia y tradición apostólica',
+      'b) Testamentos',
+      'c) Pentateuco'
     ],
     correct: 0
   },
   {
-    question: '¿Una imagen, puede ser la realidad?',
+    question: 'Ejemplo de inspiración interna',
     answer: [
-      'a) No, solo es una representación',
-      'b) Si, porque tiene intención',
-      'c) No, es solo una imagen'
+      'a) Palabra de conocimiento',
+      'b) Fe',
+      'c) Lectio Divina'
     ],
     correct: 0
   },
   {
-    question: 'Selecciona un recurso de comunicación actual, en el que las imágenes están en función de quien las mira:',
+    question: 'Dios nos habla a través de los acontecimientos. ¿Qué le decía Dios a San Agústin en su desesperanza?',
     answer: [
-      'a) Las proyecciones',
-      'b) La radio',
-      'c) La televisión'
-    ],
-    correct: 2
-  },
-  {
-    question: '¿Por qué se dice que una imagen es polisémica?',
-    answer: [
-      'a) Porque tiene muchos textos',
-      'b) Porque implica diversos significados',
-      'c) Porque sus funciones son globales'
-    ],
-    correct: 1
-  },
-  {
-    question: '¿Qué es un lenguaje total?',
-    answer: [
-      'a) La ampliación del vocabulario',
-      'b) El uso de sonidos, palabras e imágenes',
-      'c) Los códigos de comunicación'
-    ],
-    correct: 1
-  },
-  {
-    question: '¿Cuál de los siguientes enunciados hace referencia a la característica de <<La imagen es significativa>>?',
-    answer: [
-      'a) “Se nos presenta cargada de una intención, con posibilidades de comunicar un mensaje”',
-      'b) “supone el dominio de los lenguajes por los que se expresa el mundo moderno”',
-      'c) “un soporte de comunicación visual que materializa un fragmento del universo”'
-    ],
-    correct: 0
-  },
-  {
-    question: '¿De qué manera es interpretada la realidad, a través de la imagen?',
-    answer: [
-      'a) De manera objetiva',
-      'b) De manera abstracta',
-      'c) De manera subjetiva'
-    ],
-    correct: 2
-  },
-  {
-    question: 'En los albores del siglo XXI es el recurso más utilizado.',
-    answer: [
-      'a) Papel',
-      'b) Lápiz',
-      'c) Borrador'
-    ],
-    correct: 0
-  },
-  {
-    question: 'Instrumento del que nos servimos para la construcción del conocimiento.',
-    answer: [
-      'a) Pizarrón',
-      'b) Medios didácticos',
-      'c) Estrategias y metodología'
-    ],
-    correct: 1
-  },
-  {
-    question: 'Según Moreno (2004), aprendizaje se entiende cómo.',
-    answer: [
-      'a) Material didáctico que se utilizan en la docencia',
-      'b) Paradigma técnico que desarrolla una teoría curricula',
-      'c) Actividad en donde el alumno adquiere una serie de conocimientos'
-    ],
-    correct: 2
-  },
-  {
-    question: 'Formas de comunicación de los medios.',
-    answer: [
-      'a) Lenguaje visual, visual, escrito y combinación de lenguajes',
-      'b) Lenguaje verbal, sonoro y oral.',
-      'c) Lenguaje memorístico, temporal y libre.'
-    ],
-    correct: 0
-  },
-  {
-    question: 'Los materiales didácticos se clasifican en:',
-    answer: [
-      'a) Diversificados y pluridimensionales',
-      'b) Cerrados y abiertos',
-      'c) Uniformes y acumulativos'
-    ],
-    correct: 1
-  },
-  {
-    question: 'Es uno de los aspectos que prevalecen en los materiales didácticos cerrados.',
-    answer: [
-      'a) Adaptables a la realidad',
-      'b) Aprendizaje memorístico',
-      'c) Técnicas blandas'
-    ],
-    correct: 1
-  },
-  {
-    question: 'Son medios de apoyo a la comunicación oral.',
-    answer: [
-      'a) Libros, guías, revistas',
-      'b) Reglas, papeles, colores',
-      'c) Carteles, videos y pizarrón'
-    ],
-    correct: 2
-  },
-  {
-    question: 'Son ejemplos de medios de información continua.',
-    answer: [
-      'a) Páginas web, correo electrónico y videoconferencias',
-      'b) Computadora, libros y recursos',
-      'c) Mensajes, textos y folletos'
-    ],
-    correct: 0
-  },
-  {
-    question: 'Es un medio tradicional que es fundamentalmente visual y permite la inclusión de dibujos que completan los textos.',
-    answer: [
-      'a) Internet',
-      'b) La pizarra',
-      'c) Los textos'
-    ],
-    correct: 1
-  },
-  {
-    question: 'Los medios de enseñanza tiene como misión fundamental.',
-    answer: [
-      'a) Clasificar el conocimiento',
-      'b) Planificar las clases',
-      'c) Facilitar el aprendizaje de los alumnos'
+      'a) "Qué más pues, cómo te ha ido?',
+      'b) "Te haré pescador de hombres"',
+      'c) "Toma y lee"'
     ],
     correct: 2
   }
